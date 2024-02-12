@@ -148,8 +148,7 @@ function Chatbot() {
 
 
     return (
-        <><h1 className="bg-info text-center font-monospace fw-bold lh-base">Chat de usuarios</h1>
-            <div className="d-flex flex-wrap justify-content-evenly" style={{ marginTop: '0rem' }}>
+        <><div className="d-flex flex-wrap justify-content-evenly" style={{ marginTop: '0rem' }}>
 
                 <div className="" style={{ width: "500px" }}>
 
