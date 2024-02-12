@@ -148,7 +148,7 @@ function Chatbot() {
 
 
     return (
-        <><div className="d-flex flex-wrap justify-content-evenly" style={{ marginTop: '0rem' }}>
+        <><div className="d-flex flex-wrap justify-content-evenly" style={{ marginTop: '1rem' }}>
 
                 <div className="" style={{ width: "500px" }}>
 
