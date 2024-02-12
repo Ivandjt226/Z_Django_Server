@@ -5,9 +5,6 @@ import { useEffect, useState } from 'react';
 import { IoIosMic, IoIosMicOff } from 'react-icons/io';
 import { BiBot, BiUser } from 'react-icons/bi';
 
-import Webcam from "react-webcam";
-import axios from 'axios';
-
 import logoE from '../static/Logo_Elaine.JPG'
 
 function Chatbot() {
@@ -98,23 +95,12 @@ function Chatbot() {
     const [inputMessage, setInputMessage] = useState('');
     const [botTyping, setbotTyping] = useState(false);
 
-    // useEffect(() => {
-    //     const fetchData = async () => {
-    //         const videoStream = await navigator.mediaDevices.getUserMedia({ video: true });
-    //         webcamRef.current.srcObject = videoStream;
-    //     };
-    //     fetchData();
-    // }, []);
-
-
     useEffect(() => {
 
         console.log("called");
         const objDiv = document.getElementById('messageArea');
         objDiv.scrollTop = objDiv.scrollHeight;
     }, [chat])
-
-
 
 
     const handleSubmit = (evt) => {
@@ -134,7 +120,6 @@ function Chatbot() {
         }
 
     }
-
 
     const rasaAPI = async function handleClick(name, msg) {
 
@@ -217,55 +202,10 @@ function Chatbot() {
         backgroundColor: '#1b0527',
     }
 
-    /*
-        const styleHeaderLogo = {
-            height: '3.5rem',
-            width: '225px',
-            borderBottom: '1px solid black',
-            backgroundColor: '#1b0527',
-            paddingLeft: '0px',
-            paddingRight: '0px',
-            borderRadius: '30px',
-            boxShadow: '0 16px 20px 0 rgba(0,0,0,0.4)'
-        }
-    
-        const styleBodyLogo = {
-            paddingTop: '10px',
-            height: '28rem',
-            overflowY: 'a',
-            overflowX: 'hidden',
-        }
-     */
 
     return (
         <><h1 className="bg-info text-center font-monospace fw-bold lh-base">Chat de usuarios</h1>
             <div className="d-flex flex-wrap justify-content-evenly" style={{ marginTop: '0rem' }}>
-
-                {/* <button onClick={()=>rasaAPI("shreyas","hi")}>Try this</button> 
-                ###Codigo de Logo de Elaine    
-                <br></br>
-
-                <div className="">
-
-                    <div className="cardHeader text-white" style={styleHeaderLogo}>
-                        <h4 style={{ marginBottom: '0px' }}>
-                            <center>Virtual Assistant</center>
-                        </h4>
-                    </div>
-                    <br></br>
-                    <div className="cardBody top-100 start-0" style={styleBodyLogo}>
-                        <img
-                            src={logoE}
-                            width="200"
-                            height="300"
-                            className="d-inline-block align-center"
-                            alt="React Bootstrap logo"
-                        />{' '}
-
-                    </div>
-
-                </div>
-                */}
 
                 <div className="" style={{ width: "500px" }}>
 
@@ -273,9 +213,9 @@ function Chatbot() {
 
                         <div className="cardHeader text-white top-50 start-50" style={styleHeader}>
                             <h1 style={{ marginBottom: '0px' }}>
-                                <center>Elaine Assistant</center>
+                                <center>UNAB Virtual Assistant</center>
                             </h1>
-                            {botTyping ? <h6>  Elaine escribiendo...</h6> : null}
+                            {botTyping ? <h6> UNAB Virtual escribiendo...</h6> : null}
 
                         </div>
                         <div className="cardBody" id="messageArea" style={styleBody}>
@@ -320,44 +260,6 @@ function Chatbot() {
                     </div>
 
                 </div>
-                <div>
-                    <div style={{ position: 'relative' }}>
-                        <Webcam
-                            audio={false}
-                            height={480}
-                            ref={webcamRef}
-                            screenshotFormat="image/jpeg"
-                            onUserMedia={() => {
-                                setInterval(() => {
-                                    processFrame()
-                                }, 300)
-                            }}
-                            width={640}
-                            mirrored={true}
-                        />
-                        {/* Renderizar bounding boxes */}
-                        {boxes && boxes.map((box, index) => (
-                            <div
-                                key={index}
-                                style={{
-                                    position: "absolute", left: `${box.bbox[0]}px`,
-                                    top: `${box.bbox[1]}px`, width: `${box.bbox[2] - box.bbox[0]}px`,
-                                    height: `${box.bbox[3] - box.bbox[1]}px`, border: "3px solid #fff",
-                                    zIndex: 1,
-                                    backdropFilter: "blur(6px)" // hacer que el contenido detrás del bounding box se vea borroso
-                                }}
-                            >
-                                <p style={{ color: '#fff', margin: 0, padding: '5px', fontSize: '16px', position: 'absolute', bottom: '100%', fontWeight: 'bold', backgroundColor: 'rgba(13,202,240, 0.5)' }}>
-                                    {box.gender}<br></br>{`Edad: ${box.age}`} <br></br> {box.emotion}
-                                </p>
-                            </div>
-                        ))}
-                        {/*<img src="{{ url_for('streaming_camara') }}" alt="video stream" />*/}
-                        <p>*Al hacer click en "Captura" autoriza el uso de los metadatos de su imagen*</p>
-                        <div className='col-md-20 row position-relative justify-content-center'><button onClick={capture}>Captura</button></div>
-                    </div>
-                </div>
-
             </div>
         </>
     );
