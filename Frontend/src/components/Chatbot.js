@@ -5,6 +5,8 @@ import { useEffect, useState } from 'react';
 import { IoIosMic, IoIosMicOff } from 'react-icons/io';
 import { BiBot, BiUser } from 'react-icons/bi';
 
+import axios from 'axios';
+
 import logoE from '../static/Logo_Elaine.JPG'
 
 function Chatbot() {
@@ -100,7 +102,7 @@ function Chatbot() {
             })
     }
 
-    // console.log(chat);
+     console.log(chat);
 
     const stylecard = {
         maxWidth: '35rem',
