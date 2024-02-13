@@ -1,0 +1,90 @@
+version: "2.0"
+
+stories:
+
+- story: happy path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_great
+  - action: utter_happy
+
+- story: sad path 1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+
+- story: sad path 2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_goodbye
+
+- story: courses path
+  steps:
+  - intent: courses
+  - action: utter_courses
+
+- story: labs path
+  steps:
+  - intent: labs
+  - action: utter_labs
+
+- story: acreditation path
+  steps:
+  - intent: acreditation
+  - action: utter_acreditation
+
+- story: jobs path
+  steps:
+  - intent: jobs
+  - action: utter_jobs
+
+- story: functions path
+  steps:
+  - intent: functions
+  - action: utter_functions
+
+- story: modality path
+  steps:
+  - intent: modality
+  - action: utter_modality
+
+- story: deegre path
+  steps:
+  - intent: deegre
+  - action: utter_deegre
+
+- story: duration path
+  steps:
+  - intent: duration
+  - action: utter_duration
+
+- story: cost path
+  steps:
+  - intent: cost
+  - action: utter_cost
+
+- story: definition path
+  steps:
+  - intent: definition
+  - action: utter_definition
+
+- story: profile path
+  steps:
+  - intent: profile
+  - action: utter_profile
+
+- story: salary path
+  steps:
+  - intent: salary
+  - action: utter_salary

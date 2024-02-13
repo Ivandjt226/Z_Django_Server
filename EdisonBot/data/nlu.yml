@@ -1,0 +1,174 @@
+version: "2.0"
+
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hola
+    - buen dia
+    - buena tarde
+    - buenos dias
+    - buenas tardes
+    - bon dia
+    - ¿como estas?
+    - hola robot
+    - buen dia robot
+    - saludos amigo
+    - hola, como estas
+    - hola compañero
+
+- intent: goodbye
+  examples: |
+    - Hasta luego
+    - Hasta pronto
+    - adios
+    - te veo despues
+    - bye bye
+    - bye
+    - nos vemos robot
+    - Ten un gran día
+    - te veo pronto
+    - bye bye
+    - un gusto hablar contigo
+    - Chao
+
+- intent: affirm
+  examples: |
+    - Si
+    - Claro
+    - De acuerdo
+    - Por supuesto
+    - Eso suena bien
+    - Correcto
+
+- intent: deny
+  examples: |
+    - No
+    - Jamás
+    - Nunca
+    - No pienso eso.
+    - No me gusta eso
+    - No hay manera
+    - No realmente
+
+- intent: mood_great
+  examples: |
+    - Perfecto
+    - Genial
+    - Asombroso
+    - Me siento como un rey
+    - Estupendo
+    - Estoy feliz
+    - Muy muy feliz
+    - Me siento muy bien
+    - Ha sido un día perfecto
+    - Muy bien
+    - Ha sido un día perfecto
+
+- intent: mood_unhappy
+  examples: |
+    - Mi día fue horrible
+    - Estoy triste
+    - No me siento muy bien
+    - Estoy perdido y sin un motivo claro
+    - Estoy tan triste
+    - Ha sido un día fatal
+    - Tengo mucho estrés y eso me pone triste
+    - Estoy bastante agotado
+
+- intent: bot_challenge
+  examples: |
+    - ¿Eres un bot?
+    - ¿Eres un robot?
+    - ¿Eres un humano?
+    - ¿Quien eres tu?
+    - ¿Estoy hablando con un bot?
+    - ¿Estoy hablando con un humano?
+    - Identificate
+    - Quiero saber algo de ti
+    - ¿Quien eres?
+    - ¿Como te llamas?
+
+- intent: courses
+  examples: |
+    - ¿Que cursos importantes ofrece la carrera Ingeniería Mecatrónica?
+    - ¿Que diferentes cursos son ofrecidos por la carrera Ingeniería Mecatrónica?
+    - Me podrías listar algunos cursos de la carrera Ingeniería Mecatrónica
+    - ¿Que materias se ven en Ingeniería Mecatrónica?
+    - ¿Cual es el plan de estudios de la carrera de Ingeniería Mecatrónica?
+
+- intent: labs
+  examples: |
+    - ¿Con que laboratorios cuenta la carrera Ingeniería Mecatrónica?
+    - ¿Que diferentes laboratorios tiene la carrera Ingeniería Mecatrónica?
+    - Me podrías indicar que laboratorios tiene la carrera Ingeniería Mecatrónica
+    - ¿La carrera de Ingeniería Mecatrónica tiene laboratorios?
+    - ¿Con que instalaciones cuentan?
+
+- intent: acreditation
+  examples: |
+    - ¿Cuenta con un proceso de acreditación la carrera Ingeniería Mecatrónica?
+    - ¿Tiene acreditación la carrera Ingeniería Mecatrónica?
+    - Acreditación de la carrera
+    - ¿La carrera de Ingeniería Mecatrónica es un programa acreditado?
+
+- intent: jobs
+  examples: |
+    - ¿A que se dedica un Ingeniero Mecatrónico?
+    - ¿De que se consigue trabajo como Ingeniero Mecatrónico?
+    - ¿Si hay trabajo como Ingeniero Mecatrónico?
+    - ¿A que trabajos se puede postular como Ingeniero Mecatrónico?
+    - ¿De que vive un Ingeniero Mecatrónico?
+
+- intent: functions
+  examples: |
+    - ¿Que funciones podría desarrollar un Ingeniero Mecatrónico en la industria?
+    - ¿Que realiza especificamente un Ingeniero Mecatrónico?
+    - En una empresa, ¿Que funciones cumple un Ingeniero Mecatrónico?
+    - ¿Cuales son las funciones de un Ingeniero Mecatrónico?
+
+- intent: modality
+  examples: |
+    - ¿En que modalidad se dicta la carrera de Ingeniería Mecatrónica?
+    - ¿La ingeniería es virtual?
+    - ¿La carrera es remota?
+    - ¿La carrera se puede llevar semi-presencial?
+
+- intent: deegre
+  examples: |
+    - ¿Al finalizar la carrera que titulo se obtiene?
+    - ¿La carrera da algún titulo al finalizarla?
+    - ¿Ingeniería Mecatrónica es una carrera con titulación?
+
+- intent: duration
+  examples: |
+    - ¿Cuanto demora la carrera?
+    - ¿La carrera es muy extensa?
+    - ¿Cuantos semestres tiene la carrera de Ingeniería?
+    - ¿Es semestralizado el programa?
+
+- intent: cost
+  examples: |
+    - ¿Cuanto cuesta el semestre de Ingeniería Mecatrónica?
+    - ¿Que valor tiene el semestre?
+    - ¿Es costoso el semestre?
+    - ¿Que vale la matricula?
+
+- intent: definition
+  examples: |
+    - ¿Que es Ingeniería Mecatrónica?
+    - ¿Me puedes decir más de la Ingeniería Mecatrónica?
+    - ¿Que sabes de la Ingeniería Mecatrónica?
+
+- intent: profile
+  examples: |
+    - ¿Que perfil tiene el Ingeniero de la UNAB?
+    - ¿Que perfil tiene un Ingeniero Mecatrónico?
+    - Dime el perfil de Ingeniero Mecatrónico
+    - ¿Sabes con que perfil sale el Ingeniero Mecatrónico de la UNAB?
+
+- intent: salary
+  examples: |
+    - ¿Cuanto gana un Ingeniero Mecatrónico?
+    - ¿Que valor tiene un Ingeniero Mecatrónico en el mercado laboral?
+    - ¿Es bueno el salario de un Ingeniero Mecatrónico?
